@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    padding: 20px;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 30px;
+
+}
+
+nav .logo{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    color: black;
+    transition: 0.3s;
+}

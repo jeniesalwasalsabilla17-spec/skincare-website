@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #72b7ce;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2377d8;
+    padding: 10px 20px;
+    color: beige;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 6px 10px;
+    transition: 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: white;
+    color: #2377d8;
+    border-radius: 5px;
+}
+
+.navbar ul li a.active {
+    background-color: white;
+    color: #2377d8;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.hero {
+    background-color: #AED6CF;
+    text-align: center;
+    padding: 50px;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+    color: #708993;
+}
+
+.hero p {
+    color: #708993;
+    max-width: 800px;
+    margin: 0 auto 15px;
+    line-height: 1.8;
+}
+
+
+.products {
+    padding: 30px;
+    text-align: center;
+    color:#1B3C53;
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin: 10px 0 5px;
+}
+
+.product p {
+    font-weight: bold;
+    color: #2377d8;
+}
+
+.container-kontak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container img {
+    width: 60px;
+}
+
+.tombol {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    border: 1px solid blue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #23dddd;
+    transition: 0.3s;
+}
+
+.tombol:hover {
+    background-color: blue;
+    color: white;
+}
+
+.features{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.box{
+    width: 300px;
+    padding: 20px;
+    height:200 px;
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color:#636CCB;
+    color: white;
+}
+
+.box h2{
+    margin-bottom: 40px;
+
+}
+
+.judul{
+    text-align: center;
+    margin: 30px 0;
+    color:#636CCB;
+}

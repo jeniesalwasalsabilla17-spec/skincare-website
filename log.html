@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Auresea</title>
+  <link rel="stylesheet" href="css/log.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-side">
+      <div class="hero-content">
+        <h1>✨ Selamat Datang di<br>Auresea By Jenie ✨ </h1>
+        <p>Temukan rahasia kulit sehat dan bercahaya bersama produk skincare terbaik dari kami.
+          Dengan Auresea By Jenie, rasakan transformasi kulit yang lebih cerah, halus, dan bercahaya setiap hari.
+        </p>
+      </div>
+    </div>
+
+    <div class="right-side">
+      <div class="login-box">
+        <h1>Masuk</h1>
+        <form id="loginForm">
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="password" id="password" placeholder="Kata Sandi" required />
+          <button type="submit">Login</button>
+          <p class="error" id="errorMsg"></p>
+        </form>
+        <div class="link">
+          <p><a href="#">Lupa kata sandi?</a></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="login.js"></script>
+</body>
+
+</html>
+
+
+  <script src="login.js"></script>
+</body>
+</html>
+
+  <script>
+
+const form = document.getElementById("loginForm");
+const emailField = document.getElementById("email");
+const passwordField = document.getElementById("password");
+const errorMsg = document.getElementById("errorMsg");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const email = emailField.value.trim();
+  const password = passwordField.value.trim();
+
+  if (email === "" || password === "") {
+    errorMsg.textContent = "Email dan kata sandi wajib diisi";
+  } else if (!email.includes("@")) {
+    errorMsg.textContent = "Email tidak valid!";
+  } else {
+    errorMsg.textContent = "";
+
+    form.reset();
+
+    if (email === "jenie@gmail.com" && password === "1234") {
+      alert("Login berhasil!");
+      setTimeout(() => {
+        window.location.href = "skincare.html";
+      }, 3000);
+    } else {
+      errorMsg.textContent = "Email atau kata sandi salah";
+    }
+
+    emailField.focus();
+  }
+});
+
+  </script>
+</body>
+</html>

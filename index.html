@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auresea By Jenie</title>
+    <link rel="stylesheet" href="css/skncr.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>Auresea By Jenie</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produk.html">Product</a></li>
+            <li><a href="kontak.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1> Selamat Datang di Auresea By Jenie</h1>
+        <h1>✨ Auresea ✨</h1>
+            <p>Skincare yang lahir dari keinginan menghadirkan kecantikan alami dengan sentuhan modern.
+            Auresea by Jenie bukan hanya rangkaian skincare biasa. Kami percaya bahwa kulit sehat adalah dasar dari kepercayaan diri.
+            Dengan perpaduan bahan alami terbaik dan teknologi skincare terbaru, setiap produk Auresea dirancang untuk memberikan hasil yang nyata,
+            lembut, dan aman untuk semua jenis kulit.</p>
+    </div>
+
+        <section class="judul">
+            <h1>Mengapa memilih Auresea by Jenie?</h1>
+        </section>
+
+    <section class="features">
+        <div class="box">
+            <h2>🌿Brightening & Radiance Care🌿</h2>
+            <p>Diperkaya dengan Niacinamide, Vitamin C, dan ekstrak bunga alami, membantu mencerahkan kulit kusam dan wajah tampak bercahaya.</p>
+        </div>
+
+        <div class="box">
+            <h2> 💧Hydration Booster💧</h2>
+            <p>Kandungan Hyaluronic Acid menjaga kelembapan kulit hingga 24 jam, menjadikannya kenyal, segar, dan tidak mudah kering.</p>
+        </div>
+
+        <div class="box">
+            <h2>🌤️Ceramide & Antioksi🌤️</h2>
+            <p>Perlindungan dan perbaikan memperkuat skin barrier, melawan polusi, dan mencegah tanda-tanda penuaan dini.</p>
+        </div>
+
+        <div class="box">
+            <h2>🌸Bebas paraben & alkohol🌸</h2>
+            <p>Formulasi Aman cruelty-free, dan sudah dermatologically tested sehingga aman untuk kulit sensitif sekalipun. </p>
+        </div>
+    </section>
+</body>
+    <script>
+        const links = document.querySelectorAll('.nav-link');
+        const currentPage = window.location.pathname.split("/").pop();
+        links.forEach(link => {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    </script>
+
+</html>

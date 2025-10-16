@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kontak</title>
+    <link rel="stylesheet" href="css/skncr.css">
+</head>
+<style>
+        
+
+        .container{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .container-kontak{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container img{
+            width: 70px;
+        }
+        .tombol{
+            text-decoration: none;
+            font-size: 24px;
+            color: blue;
+            border: 1px solid blue;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #23dddd;
+        }
+
+        .tombol:hover{
+            background-color: blue;
+            color:white;
+        }
+</style>
+       
+<body>
+     <nav class="navbar">
+        <h1>Auresea By Jenie</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produk.html">Product</a></li>
+            <li><a href="kontak.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container-kontak">
+        <div class="container">
+            <img class="logo.wa" src="image/gmail.png" alt="">
+            <a class= "tombol" href="//wa.me/6285748724605">Hubungi Kami</a> 
+        </div> 
+
+        <div class="container">
+            <img class="logo.wa" src="image/whatsapp.png" alt="">
+            <a class= "tombol" href="//wa.me/6285748724605">Hubungi Kami</a> 
+        </div>
+    </div>
+</body>
+    <script>
+        const links = document.querySelectorAll('.nav-link');
+        const currentPage = window.location.pathname.split("/").pop();
+        links.forEach(link => {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    </script>
+
+</html>
