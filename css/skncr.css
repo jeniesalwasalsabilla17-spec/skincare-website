@@ -49,7 +49,7 @@ body {
 }
 
 .hero {
-    background-color: red;
+    background-color:#3b9fc7;
     text-align: center;
     padding: 50px;
 }
@@ -71,6 +71,7 @@ body {
     padding: 30px;
     text-align: center;
     color:#1B3C53;
+}
 
 .product-list {
     display: flex;
